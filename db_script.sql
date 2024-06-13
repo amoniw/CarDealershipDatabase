@@ -19,18 +19,24 @@ make VARCHAR(17),
 model VARCHAR(17),
 vehicleType VARCHAR(17),
 odometer INT,
-sold INT
+sold INT,
+color VARCHAR(50),
+price DOUBLE, 
  
 );
 
 CREATE TABLE inventory (
-dealership_ID INT auto_increment PRIMARY KEY
+dealership_ID INT, FOREIGN KEY,
+VIN VARCHAR(17),FOREIGN KEY,
 
 );
 
 CREATE TABLE sales_contracts (
-Contract_ID INT auto_increment PRIMARY KEY
-sales_contracts FOREIGN KEY
+Contract_ID INT auto_increment,
+sale_date INT,
+price DOUBLE,
+VIN VARCHAR(17), FOREIGN KEY 
+
 
 );
 
@@ -40,29 +46,29 @@ lease_contracts FOREIGN KEY
 
 -- step 3 -- 
 INSERT INTO dealership (dealership_id, name, address, phone)
-VALUES (INT ID,'412 Motors','27th Street','412-222-2435' ),
+VALUES ('412 Motors','412 Pitt st','412-222-2222' ),
 
 );
 
-INSERT INTO vehicles (INT VIN, year, make, model, vehicleType, odometer, sold)
-VALUES ('1BDFG344443434','2024' ,'2020' ,'Honda','Camry','Car',20000,'boolean' ),
+INSERT INTO vehicles (VIN,SOLD)
+VALUES ('GHI2345678901234','Y';
 
 ):
 
-INSERT INTO inventory (dealership_id,INT VIN)
-VALUES ('hkfhd45324','pfjdsf56433',INT VIN),
+INSERT INTO inventory (dealership_id, VIN)
+VALUES ('1','GHI2345678901234');
 
 ):
 
-INSERT INTO sales_contracts (ID INT auto_increment, FOREIGN KEY(VIN)
-VALUES ('kgddvdd8686', INT VIN)
+INSERT INTO sales_contracts (VIN)
+VALUES ('GHI2345678901234', 1/22/2024, 21,000);
 
-INSERT INTO lease_contracts (ID INT auto_increment,FOREIGN KEY(VIN)
-VALUES ( 'cfhgjdgdg', INT VIN)
+INSERT INTO lease_contracts (lease_contracts,VIN)
+VALUES (1,'GHI2345678901234');
 
 ):
 
--- step 4 --
+
 
 
 
